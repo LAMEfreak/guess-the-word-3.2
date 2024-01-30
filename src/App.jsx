@@ -131,9 +131,13 @@ function App() {
         <Scoreboard wins={gameScore[0]} roundsPlayed={gameScore[1]} />
         <h3>Word Display</h3>
         {generateWordDisplay()}
+        <br />
+        <br />
         <h3>Guessed Letters</h3>
         {guessedLetters.length > 0 ? guessedLetters.toString() : "-"}
         <br />
+        <br />
+        <div style={{backgroundColor: '#3f3f3f', width: '80%', margin: '0 auto', height:'2px'}}>{''}</div>
         <h3>Input</h3>
         <p>Tries remaining: {remainingTries}</p>
 
