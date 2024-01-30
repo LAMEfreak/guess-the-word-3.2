@@ -6,7 +6,7 @@ import Scoreboard from "./components/Scoreboard";
 
 function App() {
   // currWord is the current secret word for this round. Update this with the updater function after each round.
-  const [currWord, setCurrentWord] = useState("hello");
+  const [currWord, setCurrentWord] = useState(getRandomWord());
   // guessedLetters stores all letters a user has guessed so far
   const [guessedLetters, setGuessedLetters] = useState([]);
 
